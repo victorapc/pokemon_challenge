@@ -99,7 +99,7 @@ class _HomePageState extends State<HomePage> {
                                 context,
                                 MaterialPageRoute(
                                   builder: (context) => PokemonDetailPage(
-                                    title: pokemon.name.toUpperCase(),
+                                    pokemonObj: pokemon,
                                   ),
                                 ),
                               );
