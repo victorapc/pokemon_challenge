@@ -49,6 +49,22 @@ mixin _$PokemonStore on _PokemonStoreBase, Store {
     });
   }
 
+  late final _$errorMessageAtom =
+      Atom(name: '_PokemonStoreBase.errorMessage', context: context);
+
+  @override
+  String get errorMessage {
+    _$errorMessageAtom.reportRead();
+    return super.errorMessage;
+  }
+
+  @override
+  set errorMessage(String value) {
+    _$errorMessageAtom.reportWrite(value, super.errorMessage, () {
+      super.errorMessage = value;
+    });
+  }
+
   late final _$isLoadingAtom =
       Atom(name: '_PokemonStoreBase.isLoading', context: context);
 
@@ -92,6 +108,7 @@ mixin _$PokemonStore on _PokemonStoreBase, Store {
     return '''
 pokemons: ${pokemons},
 searchText: ${searchText},
+errorMessage: ${errorMessage},
 isLoading: ${isLoading},
 filteredPokemons: ${filteredPokemons}
     ''';

@@ -18,6 +18,9 @@ abstract class _PokemonStoreBase with Store {
   String searchText = '';
 
   @observable
+  String errorMessage = '';
+
+  @observable
   bool isLoading = false;
 
   @computed
@@ -39,7 +42,7 @@ abstract class _PokemonStoreBase with Store {
       pokemons.clear();
       pokemons.addAll(result);
     } catch (e) {
-      // Trate erros aqui
+      errorMessage = 'Erro ao carregar Pokémons';
     } finally {
       isLoading = false;
     }
