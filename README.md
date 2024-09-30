@@ -29,3 +29,6 @@ As libs **dev_dependencies** utilizadas para o projeto foi:
   - Após finalizar o build executar o projeto usando emulador ou aparelho físico se desejar
   - Após executar o projeto e ao ver sua interface, o nível de bateria poderá ser visualizado **(Usado o Channel nessa parte)**. A opção "buscar" possibilita  pesquisar o pokemon pela sua descrição e ao selecionar o card será exibido detalhes desse pokemon
   - Para realizar os testes, parar o **Build_Runner** usando Ctrl+C no **Terminal** e executar o comando dos testes **flutter test**
+![image1](https://github.com/user-attachments/assets/1e3e84a8-d6e9-403e-8d88-b81fc71c3bc4)
+![image2](https://github.com/user-attachments/assets/3da0f93a-2bea-4f76-838c-b9ecb88dcbe2)
+
